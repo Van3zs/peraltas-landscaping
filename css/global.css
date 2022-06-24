@@ -1,0 +1,155 @@
+:root {
+  --color-dt-1: #0e6832;
+  --color-dt-2: #31a35e;
+  --color-dt-3: #70d498;
+  --color-dt-4: #cfffe2;
+  --color-rd-1: #79c66d;
+  --color-bg-1: #000000;
+  --color-tx-1: #3d3d3d;
+  --color-tx-2: #cccccc;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap");
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+.title {
+  font-size: 6rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+}
+
+.title-sections {
+  padding-left: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.title-sections::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 112px;
+  background: url("../img/deco.png") no-repeat center;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 40px 70px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .title-sections {
+    font-size: 3rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .title-sections::before {
+    display: none;
+  }
+}

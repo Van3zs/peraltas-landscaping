@@ -1,0 +1,176 @@
+#contact {
+  background-color: black;
+  max-width: 100%;
+}
+
+.title-contact {
+  color: white;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+#contact .title-sections::before {
+  transform: rotate(51.55deg);
+  left: 40px;
+  top: -20px;
+}
+
+.content-contact {
+  margin: 30px auto;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.working-hour {
+  font-family: "Fira Sans", sans-serif;
+  background-color: black;
+  display: block;
+  padding-left: 45px;
+  padding-top: 25px;
+  color: white;
+  width: 40%;
+}
+
+.working-hour h2 {
+  padding-bottom: 30px;
+  font-size: 2.25rem;
+}
+
+.working-hour table {
+  color: var(--color-tx-2);
+}
+
+.working-hour td {
+  padding-bottom: 10px;
+  padding-right: 50px;
+}
+
+.working-hour p {
+  color: var(--color-tx-2);
+  padding: 20px 0;
+}
+
+.working-hour img {
+  padding: 40px 0;
+}
+
+.form {
+  max-width: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+}
+
+.form label {
+  display: block;
+  text-transform: capitalize;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.culuna {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font-size: 1.5rem;
+  background: #f5f4f4;
+  border: 1px solid var(--color-dt-4);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--color-rd-1);
+  background: white;
+  box-shadow: 0 0 0 2px var(--color-dt-4);
+}
+
+.button button {
+  background: #79c66d;
+  text-transform: uppercase;
+  background-image: -webkit-linear-gradient(top, #79c66d, #31a35e);
+  background-image: -moz-linear-gradient(top, #79c66d, #31a35e);
+  background-image: -ms-linear-gradient(top, #79c66d, #31a35e);
+  background-image: -o-linear-gradient(top, #79c66d, #31a35e);
+  background-image: linear-gradient(to bottom, #79c66d, #31a35e);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  border: none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.button button:hover {
+  background: #31a35e;
+  background-image: -webkit-linear-gradient(top, #31a35e, #79c66d);
+  background-image: -moz-linear-gradient(top, #31a35e, #79c66d);
+  background-image: -ms-linear-gradient(top, #31a35e, #79c66d);
+  background-image: -o-linear-gradient(top, #31a35e, #79c66d);
+  background-image: linear-gradient(to bottom, #31a35e, #79c66d);
+  text-decoration: none;
+}
+
+@media (max-width: 1150px) {
+  .working-hour {
+    width: 100%;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  #contact .container {
+    padding: 20px 0;
+  }
+
+  .working-hour {
+    padding: 0;
+    text-align: center;
+  }
+
+  .working-hour h2 {
+    font-size: 1.5rem;
+  }
+
+  .working-hour table {
+    font-size: 0.875rem;
+    margin: 0 auto;
+  }
+
+  .working-hour tr td:first-child {
+    padding: 5px 30px;
+  }
+
+  .form {
+    max-width: 100%;
+    display: block;
+  }
+  .form label {
+    padding-top: 20px;
+  }
+
+  .form .button {
+    text-align: center;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+/*
+Theme Name: Peraltas
+Theme URI: http://peraltas.com
+Author: Van3z
+Author URI: http://van3z.com/
+Description: theme created for Peralts's Landscaping
+Version: 1.0
+*/
+@import "css/global.css";
+@import "css/header.css";
+@import "css/about.css";
+@import "css/services.css";
+@import "css/gallery.css";
+@import "css/contact.css";
+@import "css/footer.css";
